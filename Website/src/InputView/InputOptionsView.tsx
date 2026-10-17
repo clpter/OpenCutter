@@ -111,21 +111,21 @@ const InputOptionsView = ({
         aria-controls="panel3-content"
         id="panel3-header"
       >
-        <Typography variant="h3">{t.input.options}</Typography>
+        <Typography variant="h4">{t.input.options}</Typography>
       </AccordionSummary>
       <AccordionDetails>
         <Table>
           <TableBody>
             <TableRow>
-              <TableCell sx={{ padding: '16px' }}><label htmlFor="cuttingDirection">{t.input.doNotRotate} </label></TableCell>
+              <TableCell sx={{ padding: '16px' }}><label htmlFor="cuttingDirection"><Typography variant='h5' >{t.input.doNotRotate}</Typography> </label></TableCell>
               <TableCell sx={{ padding: '16px' }}><Switch sx={{ m: 1 }} id="cuttingDirection" checked={options.cuttingDirection} onChange={onCuttingDirectionChanged} /></TableCell>
             </TableRow>
             <TableRow>
-              <TableCell sx={{ padding: '16px' }}><label htmlFor="preferVerticalCuts">{t.input.preferVerticalCuts} </label></TableCell>
+              <TableCell sx={{ padding: '16px' }}><label htmlFor="preferVerticalCuts"><Typography variant='h5' >{t.input.preferVerticalCuts}</Typography> </label></TableCell>
               <TableCell sx={{ padding: '16px' }}><Switch sx={{ m: 1 }} id="preferVerticalCuts" checked={options.preferVerticalCuts} onChange={onPreferVerticalCutsChanged} /></TableCell>
             </TableRow>
             <TableRow>
-              <TableCell sx={{ padding: '16px' }}>{t.input.extraSize}</TableCell>
+              <TableCell sx={{ padding: '16px' }}><Typography variant='h5' >{t.input.extraSize}</Typography></TableCell>
               <TableCell sx={{ padding: '16px' }}><IosStyledNumberInput
                 width="60px"
                 variant="outlined"

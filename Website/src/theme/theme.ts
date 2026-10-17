@@ -31,18 +31,40 @@ export const theme: Theme = createTheme({
       fontSize: '1.1rem',
       lineHeight: 1.6,
       color: '#1a1a1a',
+      fontWeight: 400,
+      fontFamily: '"Roboto", sans-serif',
     },
-    h3: {
-      fontFamily: 'Roboto, sans-serif',
+    body2: {
       fontSize: '1.1rem',
+      lineHeight: 1.6,
+      color: '#1a1a1a',
+      fontWeight: 400,
+      fontFamily: '"Roboto", sans-serif',
+      textAlign: 'left',
+    },
+    h2: {
+      fontFamily: 'Roboto, sans-serif',
+      fontSize: '2rem',
       fontWeight: 600,
       lineHeight: 1.2,
     },
+    h3: {
+      fontFamily: 'Roboto, sans-serif',
+      fontSize: '1.5rem',
+      fontWeight: 600,
+      lineHeight: 2,
+    },
     h4: {
       fontFamily: 'Roboto, sans-serif',
-      fontSize: '0.9rem',
+      fontSize: '1.2rem',
       fontWeight: 500,
       lineHeight: 1.2,
+    },
+    h5: {
+      fontFamily: 'Roboto, sans-serif',
+      fontSize: '1.0rem',
+      fontWeight: 400,
+      lineHeight: 1,
     },
   },
   components: {

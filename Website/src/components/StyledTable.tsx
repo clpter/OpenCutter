@@ -8,7 +8,7 @@ export const StyledTable = styled('table')({
 
 export const StyledTableHeader = styled('th')(({ theme }) => ({
   padding: '4px 8px',
-  ...theme.typography.h4
+  ...theme.typography.h5
 }));
 
 export const StyledTableRow = styled('tr', {

@@ -50,7 +50,7 @@ const InputListView = ({ header, items, onItemChanged }: {
         aria-controls="panel1-content"
         id="panel1-header"
       >
-        <Typography variant="h3">{header}</Typography>
+        <Typography variant="h4">{header}</Typography>
       </AccordionSummary>
       <AccordionDetails>
         <StyledTable>

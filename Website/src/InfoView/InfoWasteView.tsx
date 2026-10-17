@@ -13,7 +13,7 @@ const InfoWasteView = ({ header, data }: { header: string, data: ApiRectangle[] 
         expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1-content"
         id="panel3-header">
-        <Typography variant="h3">{header}</Typography>
+        <Typography variant="h4">{header}</Typography>
       </AccordionSummary>
       <AccordionDetails>
         <StyledTable>
