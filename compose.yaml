@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  api:
+    environment:
+      - SERVER_ADDRESS=0.0.0.0 # For communication between the container and the host
+    build:
+      context: ./API
+    pull_policy: build
+    container_name: opencutter-api
+    ports:
+      - "${API_HOST:-127.0.0.1}:${API_PORT:-8080}:8080"
+
+  website:
+    build:
+      context: ./Website
+    pull_policy: build
+    container_name: opencutter-website
+    ports:
+      - "${WEBSITE_HOST:-127.0.0.1}:${WEBSITE_PORT:-80}:80"
+    depends_on:
+      - api

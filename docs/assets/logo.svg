@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%" fill="none">
+  <!-- Outer Sheet Frame -->
+  <rect x="6" y="6" width="88" height="88" rx="8" stroke="#333333" stroke-width="5"/>
+  
+  <!-- Guillotine Cut 1: Vertical split -->
+  <line x1="56" y1="6" x2="56" y2="94" stroke="#333333" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Guillotine Cut 2: Horizontal split left -->
+  <line x1="6" y1="48" x2="56" y2="48" stroke="#333333" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Guillotine Cut 3: Horizontal split right -->
+  <line x1="56" y1="64" x2="94" y2="64" stroke="#333333" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Accent Piece (Top Left) in theme color -->
+  <rect x="11" y="11" width="40" height="32" rx="3" fill="#A0BB75"/>
+</svg>

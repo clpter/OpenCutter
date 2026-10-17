@@ -1,0 +1,15 @@
+{
+  "short_name": "OpenCutter",
+  "name": "OpenCutter - 2D Cutting Stock Optimizer",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#A0BB75",
+  "background_color": "#ffffff"
+}

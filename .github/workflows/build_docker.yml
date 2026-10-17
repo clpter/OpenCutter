@@ -1,0 +1,27 @@
+name: Build Docker Images
+
+on:
+  pull_request:
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+        
+      - name: Build website
+        uses: docker/build-push-action@v6
+        with:
+          context: ./Website
+          push: false
+
+      - name: Build API
+        uses: docker/build-push-action@v6
+        with:
+          context: ./API
+          push: false
