@@ -20,7 +20,7 @@ or writing documentation, all contributions are warmly welcomed.
    cd opencutter
    ```
 
-3. Create a feature branch off `master`:
+3. Create a feature branch off `main`:
 
    ```bash
    git checkout -b feature/my-new-feature
@@ -92,8 +92,8 @@ written in English.
 3. **Run CI Checks Locally:**
    - Backend: `cd API && mvn clean test`
    - Frontend: `cd Website && npm run build`
-4. **Submit PR:** Push your branch to your fork and submit a PR to `master`.
-   Fill out the PR template completely.
+4. **Submit PR:** Push your branch to your fork and submit a PR to `main`. Fill
+   out the PR template completely.
 
 ---
 
