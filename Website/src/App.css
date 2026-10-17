@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+/*---------------------------------------------Borderpane CSS ----------------------------------------------------- */ 
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  justify-content: center;
+}
+
+.border-pane {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto 1fr auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+.top {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  text-align: center;
+}
+
+.left {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 10px;
+  overflow: auto;
+  width: 350px;
+}
+
+.center {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  overflow: auto;
+  max-width: 100%;
+}
+
+.right {
+  grid-column: 3;
+  grid-row: 2;
+  padding: 10px;
+  overflow: auto;
+  width: 200px;
+}
+
+
+.inputField-addend {
+  width: 50px;
+  scroll-behavior: unset;
+}
+
+.inputList {
+  border: 3px solid black;
+}
