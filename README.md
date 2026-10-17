@@ -42,6 +42,8 @@ saws, panel saws, and shears).
   <p><em>Cut optimization on mobile devices</em></p>
 </div>
 
+You can use OpenCutter right now! [opencutter.com](opencutter.com)
+
 ---
 
 ## Features
