@@ -52,7 +52,7 @@ For more details on backend architecture and tests, see
 cd Website
 
 # Install dependencies
-npm install
+npm install --allow-remote=all
 
 # Start Vite dev server with hot reload (port 3000)
 npm run dev
