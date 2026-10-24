@@ -21,8 +21,8 @@
     "html2canvas": "^1.4.1",
     "jspdf": "^4.2.1",
     "papaparse": "^5.7.0",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "react-router-dom": "^7.18.4",
     "xlsx": "https://cdn.sheetjs.com/xlsx-latest/xlsx-latest.tgz"
   },
