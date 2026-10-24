@@ -1,0 +1,21 @@
+name: Notify origin about upstream changes
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger sync in origin
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.ORIGIN_DISPATCH_TOKEN }}
+          repository: clpter/cutting_website
+          event-type: upstream-update
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
