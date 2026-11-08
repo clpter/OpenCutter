@@ -7,7 +7,7 @@ RUN npm run build
 FROM nginx:alpine
 COPY --from=builder /app/build /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-# Nginx läuft standardmäßig auf Port 80
+# Define Port
 EXPOSE 80
-# Nginx im Vordergrund starten
+# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
